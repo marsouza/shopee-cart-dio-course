@@ -58,7 +58,7 @@ async function updateItemQuantity(userCart, itemName, action, quantity = 1) {
 
 async function clearCart(userCart) {
     // Lógica para limpar o carrinho
-    userCart = [];
+    userCart.length = 0;
 }
 
 async function calculateCartTotal(userCart) {
